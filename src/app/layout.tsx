@@ -26,9 +26,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden overflow-y-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black fixed inset-0 flex items-center justify-center`}
       >
-        {children}
+        <div className="p-4 bg-white w-[93vw] h-[95vh] rounded-lg">
+          {/* Scrollable inner content */}
+          <div
+            className="h-full overflow-auto p-6 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200"
+          >
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

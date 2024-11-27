@@ -1,5 +1,5 @@
 // pages/index.tsx
-"use client"
+"use client";
 import { useState } from "react";
 import SelectionForm from "@/components/SelectionForm";
 
@@ -44,8 +44,8 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-xl">
+    <div className="flex flex-col space-y-8 p-6 shadow-md">
+      <div className="bg-rose-300 p-8 rounded-lg shadow-xl">
         <h1 className="text-3xl font-bold mb-6 text-center">
           Which Powerpuff Are You Today?
         </h1>
@@ -56,6 +56,66 @@ const Home: React.FC = () => {
         ) : (
           <SelectionForm onSubmit={handleFormSubmit} />
         )}
+      </div>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </h1>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        numquam eaque iure odio sapiente, impedit aliquid exercitationem sunt in
+        totam sed repellendus, aliquam dolores. Saepe nobis officia quae
+        expedita nulla?
       </div>
     </div>
   );
