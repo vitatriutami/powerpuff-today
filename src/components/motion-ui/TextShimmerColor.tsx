@@ -1,10 +1,10 @@
 import { TextShimmer } from '@/components/core/text-shimmer';
 
-interface TextShimmerColorProps {
+interface Props {
   children: ReactNode;
 }
 
-export function TextShimmerColor({ children }: TextShimmerColorProps) {
+export default function TextShimmerColor({ children }: Props) {
   return (
     <TextShimmer
       duration={1.2}

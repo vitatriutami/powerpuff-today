@@ -11,7 +11,7 @@ interface TextShimmerProps {
   spread?: number;
 }
 
-export function TextShimmer({
+export default function TextShimmer({
   children,
   as: Component = 'p',
   className,

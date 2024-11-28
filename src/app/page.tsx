@@ -1,8 +1,8 @@
 // pages/index.tsx
 "use client";
 import { useState } from "react";
-import SelectionForm from "@/components/SelectionForm";
-import TextShimmerColor from "@/components/motion-ui/TextShimmerColor.tsx"
+// import SelectionForm from "@/components/SelectionForm";
+import TextShimmerColor from "@/components/motion-ui/TextShimmerColor"
 import Link from "next/link";
 import Image from "next/image";
 
