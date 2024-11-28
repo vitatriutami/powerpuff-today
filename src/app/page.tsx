@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import SelectionForm from "@/components/SelectionForm";
+import TextShimmerColor from "@/components/motion-ui/TextShimmerColor.tsx"
 import Link from "next/link";
 import Image from "next/image";
 
@@ -46,7 +47,8 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-16 py-6 px-16">
+    <div className="py-6 px-16 h-[80vh]">
+      <main className="flex flex-col items-center justify-center md:justify-between gap-8">
       <nav className="flex gap-2 justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full">
         <div>Logo</div>
         <div className="flex gap-1">
@@ -54,7 +56,7 @@ const Home: React.FC = () => {
         </div>
         <div>About</div>
       </nav>
-      <section className="grid grid-cols-4 gap-2 m-auto sm:gap-4 md:gap-7 md:grid-rows-[1fr_auto]">
+      <section className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-7 md:grid-rows-[1fr_auto]">
         {[
           {
             bg: "bg-gradient-to-r from-slate-100 via-purple-300 to-slate-100",
@@ -122,11 +124,11 @@ const Home: React.FC = () => {
         <div className="col-span-4 md:col-span-3 md:col-start-2">
           <div className="mt-8 flex flex-col gap-3 sm:mt-0 sm:gap-3 font-ticketing">
             <div>
-              <h1 className="text-3xl md:text-7xl uppercase leading-9 tracking-tight sm:text-7xl">
+              <h1 className="text-3xl md:text-7xl uppercase leading-9 tracking-tight">
                 Which Powerpuff Girls are You Today?
               </h1>
-              <p className="mb-2 text-3xl leading-7 md:text-xl">
-                Ready to uncover your inner hero? <span className="font-semibold">Blastpuff Match</span> is a fun,
+              <p className="mb-2 text-3xl md:text-3xl">
+                Ready to uncover your inner hero? <span className="font-bold text-purple-400">Blastpuff Match</span> is a fun,
                 interactive journey that matches you with a Powerpuff-inspired
                 character based on your unique daily experiences. Every day
                 brings a new adventure, and who you are today might surprise
@@ -135,14 +137,14 @@ const Home: React.FC = () => {
             </div>
             <Link
               href="#"
-              className="w-[300px] text-4xl text-center uppercase hover:text-purple-300 group bg-black text-white font-semibold py-2 px-4 rounded-full shadow-md overflow-hidden"
+              className="w-[300px] text-4xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden"
             >
-              Play Now
+              <TextShimmerColor>Play now</TextShimmerColor>
             </Link>
           </div>
         </div>
       </section>
-
+ </main>
       {/* <section className="bg-rose-300 p-8 rounded-lg shadow-xl">
         <h1 className="text-3xl font-bold mb-6 text-center">
           Which Powerpuff Are You Today?
