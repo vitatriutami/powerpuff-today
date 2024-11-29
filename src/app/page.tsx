@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 
 
   return (
-      <main className="flex flex-col items-center justify-center gap-4">
+      <main className="flex flex-col items-center justify-center gap-6">
         <nav className="flex gap-2 items-center justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full overflow-hidden">
           <div className="flex items-center gap-3">
             <img
@@ -106,7 +106,7 @@ const Home: React.FC = () => {
               className={`${
                 item.bg
               } group relative flex items-center justify-center overflow-hidden rounded-lg border-2 ${
-                item.isRowSpan ? "md:row-span-2 h-full" : "h-56 md:h-64"
+                item.isRowSpan ? "md:row-span-2 h-full" : "h-32 md:h-44"
               }`}
             >
               <div
@@ -131,8 +131,8 @@ const Home: React.FC = () => {
                 className={`transition-transform ease-out ${
                   item.src === "/pngegg (1).png" && item.isRowSpan
                     ? ""
-                    : "md:group-hover:translate-x-[55px]"
-                } group-hover:translate-y-[6px] duration-300 ease-out group-hover:scale-75 md:group-hover:scale-75`}
+                    : "md:group-hover:translate-x-[70px]"
+                } group-hover:translate-y-[-18px] duration-300 ease-out group-hover:scale-75 md:group-hover:scale-75`}
               />
             </div>
           ))}
@@ -161,7 +161,7 @@ const Home: React.FC = () => {
               </div>
               <Link
                 href="#"
-                className="w-[300px] text-2xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 transform active:scale-75 transition-transform"
+                className="w-[300px] text-2xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 hover:ring-2 transform active:scale-75 transition-transform"
               >
                 <TextShimmerColor>Play now</TextShimmerColor>
               </Link>
