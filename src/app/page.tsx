@@ -36,20 +36,20 @@ import { TextLoop } from "@/components/motion-ui/TextLoop";
 // };
 
 const Home: React.FC = () => {
-//   const [_character, setCharacter] = useState<string | null>(null);
+  //   const [_character, setCharacter] = useState<string | null>(null);
 
-//  const handleFormSubmit = (
-//   _mood: Mood,
-//   _productivity: Productivity,
-//   _sociality: Sociality
-// ) => {
-//   const result = getCharacter(_mood, _productivity, _sociality);
-//   setCharacter(result);
-// };
-
+  //  const handleFormSubmit = (
+  //   _mood: Mood,
+  //   _productivity: Productivity,
+  //   _sociality: Sociality
+  // ) => {
+  //   const result = getCharacter(_mood, _productivity, _sociality);
+  //   setCharacter(result);
+  // };
 
   return (
-      <main className="flex flex-col items-center justify-center gap-6">
+    <div>
+      <section className="flex flex-col items-center justify-center gap-6 py-6 px-16 h-[94.5vh]">
         <nav className="flex gap-2 items-center justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full overflow-hidden">
           <div className="flex items-center gap-3">
             <img
@@ -58,8 +58,12 @@ const Home: React.FC = () => {
               width={250}
               height={50}
             />
-            <Link href="#" className="hover:font-semibold">About</Link>
-            <Link href="#" className="hover:font-semibold">Contact</Link>
+            <Link href="#" className="hover:font-semibold">
+              About
+            </Link>
+            <Link href="#" className="hover:font-semibold">
+              Contact
+            </Link>
           </div>
           <TextLoop
             className="text-lg text-purple-800"
@@ -180,7 +184,11 @@ const Home: React.FC = () => {
           <SelectionForm onSubmit={handleFormSubmit} />
         )}
       </section> */}
-      </main>
+      </section>
+      <section className="bg-purple-200 h-[94.5vh] py-6 px-16">
+        <p>Halooo</p>
+      </section>
+    </div>
   );
 };
 
