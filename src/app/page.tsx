@@ -6,9 +6,10 @@ import TextShimmerColor from "@/components/motion-ui/TextShimmerColor";
 import Link from "next/link";
 import Image from "next/image";
 import { TextLoop } from "@/components/motion-ui/TextLoop";
-import { TiltCard1 } from "@/components/motion-ui/TiltCard1";
-import { TiltCard2 } from "@/components/motion-ui/TiltCard2";
-import { TiltCard3 } from "@/components/motion-ui/TiltCard3";
+import { TiltCardTrail1 } from "@/components/motion-ui/TiltCardTrail1";
+import { TiltCardTrail2 } from "@/components/motion-ui/TiltCardTrail2";
+import { TiltCardTrail3 } from "@/components/motion-ui/TiltCardTrail3";
+// import { BorderTrailCard2 } from "@/components/motion-ui/BorderTrailCard";
 
 // type Mood = "happy" | "sad" | "angry" | "tired";
 // type Productivity = "full" | "half" | "low";
@@ -52,7 +53,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <section className="flex flex-col items-center justify-center gap-6 py-6 px-16 h-[94.5vh]">
+      <section className="flex flex-1 flex-col items-center justify-center gap-6 py-6 px-16 md:h-[94.5vh]">
         <nav className="flex gap-2 items-center justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full overflow-hidden">
           <div className="flex items-center gap-3">
             <img
@@ -69,7 +70,7 @@ const Home: React.FC = () => {
             </Link>
           </div>
           <TextLoop
-            className="text-lg text-purple-800"
+            className="text-lg text-purple-800 hidden md:block"
             interval={3}
             transition={{ duration: 0.4 }}
           >
@@ -147,7 +148,7 @@ const Home: React.FC = () => {
           <div className="col-span-4 md:col-span-3 md:col-start-2">
             <div className="mt-8 flex flex-col gap-3 sm:mt-0 sm:gap-3 font-ticketing">
               <div>
-                <h1 className="text-2xl md:text-5xl uppercase leading-9 tracking-tight">
+                <h1 className="text-3xl md:text-5xl uppercase leading-9 tracking-tight">
                   Which Powerpuff Girls are You Today?
                 </h1>
                 <p className="mb-2 text-lg md:text-xl">
@@ -168,7 +169,7 @@ const Home: React.FC = () => {
               </div>
               <Link
                 href="#"
-                className="w-[300px] text-2xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 hover:ring-2 transform active:scale-75 transition-transform"
+                className="w-[200px] md:w-[300px] text-xl md:text-2xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 hover:ring-2 transform active:scale-75 transition-transform"
               >
                 <TextShimmerColor>Play now</TextShimmerColor>
               </Link>
@@ -188,11 +189,11 @@ const Home: React.FC = () => {
         )}
       </section> */}
       </section>
-      <section className="bg-purple-200 h-[94.5vh] py-6 px-16 flex items-center justify-center">
-        <div className="flex flex-wrap gap-8">
-          <TiltCard1 />
-          <TiltCard2 />
-          <TiltCard3 />
+      <section className="bg-purple-200 md:h-[94.5vh] py-6 px-16 flex flex-1 items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center gap-8">
+          <TiltCardTrail1 />
+          <TiltCardTrail2 />
+          <TiltCardTrail3 />
         </div>
       </section>
     </div>
