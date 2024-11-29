@@ -1,10 +1,10 @@
 // pages/index.tsx
-"use client";
-import { useState } from "react";
+// import { useState } from "react";
 // import SelectionForm from "@/components/SelectionForm";
-import TextShimmerColor from "@/components/motion-ui/TextShimmerColor"
+import TextShimmerColor from "@/components/motion-ui/TextShimmerColor";
 import Link from "next/link";
 import Image from "next/image";
+import { TextLoop } from "@/components/motion-ui/TextLoop";
 
 type Mood = "happy" | "sad" | "angry" | "tired";
 type Productivity = "full" | "half" | "low";
@@ -35,7 +35,7 @@ const getCharacter = (
 };
 
 const Home: React.FC = () => {
-  const [character, setCharacter] = useState<string | null>(null);
+  // const [character, setCharacter] = useState<string | null>(null);
 
   const handleFormSubmit = (
     mood: Mood,
@@ -49,12 +49,26 @@ const Home: React.FC = () => {
   return (
     <div className="py-6 px-16 h-[80vh]">
       <main className="flex flex-col items-center justify-center md:justify-between gap-8">
-        <nav className="flex gap-2 justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full">
-          <div>Logo</div>
-          <div className="flex gap-1">
-            <img src="/blossom.svg" width={50} alt="Blossom" />
+        <nav className="flex gap-2 items-center justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full overflow-hidden">
+          <div className="flex items-center">
+            <img
+              src="/blast.png"
+              alt="Blastpuff Match"
+              width={250}
+              height={50}
+            />
+            <p>connect</p>
           </div>
-          <div>About</div>
+          <TextLoop
+            className="text-2xl text-purple-800"
+            interval={3}
+            transition={{ duration: 0.4 }}
+          >
+            <span>How&apos;s your day?</span>
+            <span>You did great!</span>
+            <span>Explore how superpower are you today!</span>
+            <span>Match your vibes daily!</span>
+          </TextLoop>
         </nav>
         <section className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-7 md:grid-rows-[1fr_auto]">
           {[
@@ -129,9 +143,13 @@ const Home: React.FC = () => {
                 </h1>
                 <p className="mb-2 text-3xl md:text-3xl">
                   Ready to uncover your inner hero?{" "}
-                  <span className="font-bold text-purple-400">
-                    Blastpuff Match
-                  </span>{" "}
+                  <span className="inline-flex">
+                    <img
+                      src="/blast.png"
+                      alt="Blastpuff Match"
+                      className="self-center w-52 h-7 mr-1"
+                    />
+                  </span>
                   is a fun, interactive journey that matches you with a
                   Powerpuff-inspired character based on your unique daily
                   experiences. Every day brings a new adventure, and who you are
