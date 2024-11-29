@@ -21,7 +21,7 @@ const geistTicketing = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Blustpuff Match",
+  title: "Blastpuff Match",
   description: "Which powerpuff are you today?",
 };
 

@@ -7,6 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { TextLoop } from "@/components/motion-ui/TextLoop";
 import { TiltCard1 } from "@/components/motion-ui/TiltCard1";
+import { TiltCard2 } from "@/components/motion-ui/TiltCard2";
+import { TiltCard3 } from "@/components/motion-ui/TiltCard3";
 
 // type Mood = "happy" | "sad" | "angry" | "tired";
 // type Productivity = "full" | "half" | "low";
@@ -189,8 +191,8 @@ const Home: React.FC = () => {
       <section className="bg-purple-200 h-[94.5vh] py-6 px-16 flex items-center justify-center">
         <div className="flex flex-wrap gap-8">
           <TiltCard1 />
-          <TiltCard1 />
-          <TiltCard1 />
+          <TiltCard2 />
+          <TiltCard3 />
         </div>
       </section>
     </div>
