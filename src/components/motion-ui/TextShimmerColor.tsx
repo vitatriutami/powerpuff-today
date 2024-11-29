@@ -8,7 +8,8 @@ export default function TextShimmerColor({ children }: Props) {
   return (
     <TextShimmer
       duration={1.2}
-      className='[--base-color:theme(colors.purple.300)] [--base-gradient-color:theme(colors.purple.100)] dark:[--base-color:theme(colors.blue.700)] dark:[--base-gradient-color:theme(colors.blue.400)]'
+      className="[--duration:1.2s] 
+        hover:[--duration:5s] [--base-color:theme(colors.purple.300)] [--base-gradient-color:theme(colors.purple.100)] dark:[--base-color:theme(colors.blue.700)] dark:[--base-gradient-color:theme(colors.blue.400)]"
     >
       {children}
     </TextShimmer>

@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 
 
   return (
-      <main className="flex flex-col items-center justify-center md:justify-between gap-8">
+      <main className="flex flex-col items-center justify-center gap-4">
         <nav className="flex gap-2 items-center justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full overflow-hidden">
           <div className="flex items-center gap-3">
             <img
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
             <Link href="#" className="hover:font-semibold">Contact</Link>
           </div>
           <TextLoop
-            className="text-xl text-purple-800"
+            className="text-lg text-purple-800"
             interval={3}
             transition={{ duration: 0.4 }}
           >
@@ -161,15 +161,14 @@ const Home: React.FC = () => {
               </div>
               <Link
                 href="#"
-                className="w-[300px] text-3xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 transform active:scale-75 transition-transform"
+                className="w-[300px] text-2xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 transform active:scale-75 transition-transform"
               >
                 <TextShimmerColor>Play now</TextShimmerColor>
               </Link>
             </div>
           </div>
         </section>
-      </main>
-      {/* <section className="bg-rose-300 p-8 rounded-lg shadow-xl">
+        {/* <section className="bg-rose-300 p-8 rounded-lg shadow-xl">
         <h1 className="text-3xl font-bold mb-6 text-center">
           Which Powerpuff Are You Today?
         </h1>
@@ -181,6 +180,7 @@ const Home: React.FC = () => {
           <SelectionForm onSubmit={handleFormSubmit} />
         )}
       </section> */}
+      </main>
   );
 };
 
