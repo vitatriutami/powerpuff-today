@@ -49,20 +49,20 @@ const Home: React.FC = () => {
 
 
   return (
-    <div className="py-6 px-16 h-[80vh]">
       <main className="flex flex-col items-center justify-center md:justify-between gap-8">
         <nav className="flex gap-2 items-center justify-between px-8 py-4 border-[3px] border-black rounded-lg w-full overflow-hidden">
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
             <img
               src="/blast.png"
               alt="Blastpuff Match"
               width={250}
               height={50}
             />
-            <p>connect</p>
+            <Link href="#" className="hover:font-semibold">About</Link>
+            <Link href="#" className="hover:font-semibold">Contact</Link>
           </div>
           <TextLoop
-            className="text-2xl text-purple-800"
+            className="text-xl text-purple-800"
             interval={3}
             transition={{ duration: 0.4 }}
           >
@@ -110,16 +110,16 @@ const Home: React.FC = () => {
               }`}
             >
               <div
-                className={`absolute bottom-[-32px] left-0 hidden w-full border-t-2 px-4 py-2 text-center ${
+                className={`absolute bottom-[-38px] left-0 hidden w-full border-t-2 px-4 py-1 text-center ${
                   item.src === "/pngegg (1).png"
                     ? "group-hover:text-center"
                     : "group-hover:text-start"
-                } text-black bg-slate-300 transition-transform duration-300 ease-out group-hover:translate-y-[-32px] md:block`}
+                } text-black bg-slate-300 transition-transform duration-300 ease-out group-hover:translate-y-[-38px] md:block`}
               >
-                <span className="text-4xl uppercase font-ppg text-black tracking-wider">
+                <span className="text-2xl uppercase font-ppg text-black tracking-wider">
                   {item.name}
                 </span>
-                <p className="line-clamp-2 h-8 leading-4 mt-2 text-xl">
+                <p className="line-clamp-2 h-8 leading-4 mt-2 text-lg">
                   {item.desc}
                 </p>
               </div>
@@ -132,7 +132,7 @@ const Home: React.FC = () => {
                   item.src === "/pngegg (1).png" && item.isRowSpan
                     ? ""
                     : "md:group-hover:translate-x-[55px]"
-                } group-hover:translate-y-[-6px] duration-300 ease-out group-hover:scale-75 md:group-hover:scale-75`}
+                } group-hover:translate-y-[6px] duration-300 ease-out group-hover:scale-75 md:group-hover:scale-75`}
               />
             </div>
           ))}
@@ -140,16 +140,16 @@ const Home: React.FC = () => {
           <div className="col-span-4 md:col-span-3 md:col-start-2">
             <div className="mt-8 flex flex-col gap-3 sm:mt-0 sm:gap-3 font-ticketing">
               <div>
-                <h1 className="text-3xl md:text-7xl uppercase leading-9 tracking-tight">
+                <h1 className="text-2xl md:text-5xl uppercase leading-9 tracking-tight">
                   Which Powerpuff Girls are You Today?
                 </h1>
-                <p className="mb-2 text-3xl md:text-3xl">
+                <p className="mb-2 text-lg md:text-xl">
                   Ready to uncover your inner hero?{" "}
                   <span className="inline-flex">
                     <img
                       src="/blast.png"
                       alt="Blastpuff Match"
-                      className="self-center w-52 h-7 mr-1"
+                      className="self-center w-52 h-5 mr-1"
                     />
                   </span>
                   is a fun, interactive journey that matches you with a
@@ -161,7 +161,7 @@ const Home: React.FC = () => {
               </div>
               <Link
                 href="#"
-                className="w-[300px] text-4xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 transform active:scale-75 transition-transform"
+                className="w-[300px] text-3xl uppercase text-center group bg-black font-semibold py-4 px-6 rounded-lg shadow-md overflow-hidden outline-none focus:ring-4 transform active:scale-75 transition-transform"
               >
                 <TextShimmerColor>Play now</TextShimmerColor>
               </Link>
@@ -181,7 +181,6 @@ const Home: React.FC = () => {
           <SelectionForm onSubmit={handleFormSubmit} />
         )}
       </section> */}
-    </div>
   );
 };
 

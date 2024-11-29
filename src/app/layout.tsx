@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <div className="m-[1%] bg-white h-[95vh] rounded-xl flex-1 overflow-hidden">
           {/* Scrollable inner content */}
-          <div className="flex-1 h-full overflow-hidden overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-white">
+          <div className="flex-1 h-full overflow-hidden overflow-y-auto py-6 px-16 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-white">
             {children}
           </div>
         </div>
