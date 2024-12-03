@@ -42,6 +42,33 @@ import { TiltCardTrail3 } from "@/components/motion-ui/TiltCardTrail3";
 // };
 
 const Home: React.FC = () => {
+  const dataPPG = [
+    {
+      bg: "bg-purple-200",
+      src: "/tri.png",
+      isRowSpan: true,
+      name: "The Powerpuff Girls",
+      desc: "Superhero in Townsville",
+    },
+    {
+      bg: "bg-sky-200",
+      src: "/pngegg (4).png",
+      name: "Bubbles",
+      desc: "The joy and the laughter",
+    },
+    {
+      bg: "bg-pink-200",
+      src: "/pngegg5.png",
+      name: "Blossom",
+      desc: "The commander and the leader",
+    },
+    {
+      bg: "bg-emerald-200",
+      src: "/pngegg (3).png",
+      name: "Buttercup",
+      desc: "The toughest fighter",
+    },
+  ];
   //   const [_character, setCharacter] = useState<string | null>(null);
 
   //  const handleFormSubmit = (
@@ -83,33 +110,7 @@ const Home: React.FC = () => {
           </TextLoop> */}
         </nav>
         <section className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-7 md:grid-rows-[1fr_auto]">
-          {[
-            {
-              bg: "bg-purple-200",
-              src: "/tri.png",
-              isRowSpan: true,
-              name: "The Powerpuff Girls",
-              desc: "Superhero in Townsville",
-            },
-            {
-              bg: "bg-sky-200",
-              src: "/pngegg (4).png",
-              name: "Bubbles",
-              desc: "The joy and the laughter",
-            },
-            {
-              bg: "bg-pink-200",
-              src: "/pngegg5.png",
-              name: "Blossom",
-              desc: "The commander and the leader",
-            },
-            {
-              bg: "bg-emerald-200",
-              src: "/pngegg (3).png",
-              name: "Buttercup",
-              desc: "The toughest fighter",
-            },
-          ].map((item, index) => (
+          {dataPPG.map((item, index) => (
             // Group per icon box
             <div
               key={index}
@@ -171,7 +172,7 @@ const Home: React.FC = () => {
               </div>
               <Link
                 href="/quiz"
-                className="w-[200px] md:w-[300px] font-tracking text-xl md:text-2xl uppercase text-center bg-slate-700 font-semibold py-4 px-6 rounded-[4.5px] shadow-md border-2 border-black shadow-custom hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                className="w-[200px] md:w-[300px] font-tracking text-xl md:text-2xl uppercase text-center bg-black font-semibold py-4 px-6 rounded-[4.5px] border-2 border-black shadow-custom hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
               >
                 <TextShimmerColor>Play now</TextShimmerColor>
               </Link>
