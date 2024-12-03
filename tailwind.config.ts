@@ -15,7 +15,7 @@ export default {
         `,
       },
       boxShadow: {
-        custom: "10px 10px 0px -1px rgba(0,0,0,1)
+        custom: "10px 10px 0px -1px rgba(0,0,0,1)",
       },
       fontFamily: {
         ticketing: ["var(--font-ticketing)"],

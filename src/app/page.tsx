@@ -2,11 +2,11 @@
 // pages/index.tsx
 // import { useState } from "react";
 // import SelectionForm from "@/components/SelectionForm";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import TextShimmerColor from "@/components/motion-ui/TextShimmerColor";
 import Link from "next/link";
 import Image from "next/image";
-import { InView } from "@/components/core/in-view";
+// import { InView } from "@/components/core/in-view";
 // import { TextLoop } from "@/components/motion-ui/TextLoop";
 import { TiltCardTrail1 } from "@/components/motion-ui/TiltCardTrail1";
 import { TiltCardTrail2 } from "@/components/motion-ui/TiltCardTrail2";
@@ -192,68 +192,11 @@ const Home: React.FC = () => {
       </section> */}
       </section>
       <section className="bg-purple-200 md:h-[94.5vh] py-6 px-16 flex flex-1 items-center justify-center">
-        <InView viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}>
-          <motion.div
-            className="flex flex-wrap items-center justify-center gap-8"
-            variants={{
-              hidden: {
-                opacity: 0,
-              },
-              visible: {
-                opacity: 1,
-                transition: {
-                  staggerChildren: 0.5, // Stagger delay between children
-                },
-              },
-            }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.5, // Duration of each child's animation
-                  },
-                },
-              }}
-            >
-              <TiltCardTrail1 />
-            </motion.div>
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.5,
-                  },
-                },
-              }}
-            >
-              <TiltCardTrail2 />
-            </motion.div>
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.5,
-                  },
-                },
-              }}
-            >
-              <TiltCardTrail3 />
-            </motion.div>
-          </motion.div>
-        </InView>
+        <div className="flex flex-wrap items-center justify-center gap-8">
+          <TiltCardTrail1 />
+          <TiltCardTrail2 />
+          <TiltCardTrail3 />
+        </div>
       </section>
     </div>
   );
