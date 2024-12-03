@@ -14,6 +14,9 @@ export default {
           repeating-linear-gradient(45deg, #b645f7 25%, #e6f7f7 25%, #e6f7f7 75%, #b645f7 75%, #b645f7)
         `,
       },
+      boxShadow: {
+        custom: "10px 10px 0px -1px rgba(0,0,0,1)
+      },
       fontFamily: {
         ticketing: ["var(--font-ticketing)"],
         ppg: ["var(--font-ppg)"],
